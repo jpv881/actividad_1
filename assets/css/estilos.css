@@ -50,6 +50,7 @@
 #mapa {
     background-color: black;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #mapa > .row .col-md-6:nth-child(1){
@@ -57,6 +58,47 @@
     justify-content: center;
 }
 
-#mapa iframe {
-//margin-top: 50px;
+#formulario input{
+    margin-bottom: 10px !important;
+}
+
+footer {
+    background-color: #FC8E32;
+    padding-top: 10px;
+}
+
+footer a{
+    color: #646464;
+    /*font-weight: bold;*/
+}
+
+footer a:hover{
+    color: white;
+}
+
+footer .col-md-4 {
+    text-align: center;
+}
+
+.footerTitle {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#textoAyuda {
+    color: #646464;
+}
+
+#divDatos p{
+    color: #CA4D0F;
+}
+
+#copyRight {
+    text-align: center;
+    border-top: solid 1px #646464;
+    color: #646464;
+    padding: 15px 0px;
+    font-size: 0.8em;
+    margin-top: 10px;
 }
