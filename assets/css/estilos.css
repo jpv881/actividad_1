@@ -1,0 +1,62 @@
+
+#nosotros .wrapper{
+    background-image: url("../img/elefantes.jpg");
+    /*width: 100vw;*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#nosotros .wrapper > div {
+    width: 35vw;
+    background-color: rgba(255, 255, 255,0.5);
+    position: relative;
+    top: 30px;
+    left: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 25px;
+    color: white;
+}
+
+#nosotros .wrapper > div h3,
+#nosotros . wrapper > div p{
+    color: white;
+}
+
+#nosotros .wrapper > div p {
+    text-shadow: 1px 1px #537775;
+}
+
+#descubrir {
+    background-color: #ff6600;
+    font-weight: bold;
+    width: 110px;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 3px;
+    padding: 3px 0px;
+    position: relative;
+    bottom: 5px !important;
+    margin-top: 50px;
+}
+
+#descubrir:hover {
+    cursor:pointer;
+    background-color: antiquewhite;
+}
+
+#mapa {
+    background-color: black;
+    padding-top: 50px;
+}
+
+#mapa > .row .col-md-6:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
+
+#mapa iframe {
+//margin-top: 50px;
+}
