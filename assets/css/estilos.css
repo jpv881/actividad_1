@@ -1,5 +1,6 @@
 body {
     margin:0;
+    padding:0;
 }
 header #logo {
   background-image: url("../img/iconoweb.png");
@@ -23,14 +24,16 @@ header #menu{
   font-style: italic;
   text-align: center;
   margin-top: -10vh;
-
 }
 #menu a{
-  margin-right: 20px;
-    color:inherit;
-}
+     margin-right: 20px;
+     color:inherit;
+ }
+#menu a:hover{
+    text-decoration: none;
+  }
 #redesSociales{
-  margin-top: -8vh;
+  margin-top: -50px;
   float:right;
   margin-right:10px;
 }
@@ -72,7 +75,6 @@ header #menu{
   background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
   background-size: cover;
   height: 100vh;
-  width:100%;
 }
 #principal {
   margin-top: 10vh;
@@ -94,11 +96,49 @@ header #menu{
   font-size: 50px;
   margin-top: 50px;
 }
-
-#destinos{
-  height:1000px;
+#destinosWrap{
+    margin-top:10%;
+    background-color:white;
+    width: fit-content;
 }
-
+.dest .col-md-4 div{
+    height:250px;
+    width:350px;
+    background-size: cover;
+    margin-bottom:15vh;
+    margin-right: 15vh;
+    margin-left: 15vh;
+}
+.dest h1{
+    font-family:Calibri;
+    color:white;
+    font-size: 20px;
+    background-color: #cc0000;
+    text-align:end;
+    background-size: contain;
+    display:inline-block;
+    float:right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#destino1{
+    background-image: url("../img/destinos/finland.jpg");
+}
+#destino2{
+    background-image: url("../img/destinos/marruecos.jpg");
+    }
+#destino3{
+    background-image: url("../img/destinos/nicaragua.jpg");
+}
+#destino4{
+    background-image: url("../img/destinos/peru.jpg");
+}
+#destino5{
+    background-image: url("../img/destinos/singapur.jpg");
+}
+#destino6{
+    background-image: url("../img/destinos/suiza.jpg");
+}
 #nosotros .wrapper{
     background-image: url("../img/elefantes.jpg");
     /*width: 100vw;*/
