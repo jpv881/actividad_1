@@ -7,16 +7,41 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 <body>
+  <section id="inicio" class="parallax--bg">
     <header>
+      <div id="logo">
+        <p>GeeksHubs</br>Travels</p>
+      </div>
 
+      <div id="menu">
+        <a href="#destinos" id="anchor1" class="anchorLinks">Destinos</a>
+        <a href="#nosotros" id="anchor2" class="anchorLinks">Quién somos</a>
+        <a href="#mapa" id="anchor3" class="anchorLinks">Dónde estamos</a>
+      </div>
+
+      <div id="redesSociales">
+        <ul>
+            <a href=""><li id="tw"></li></a>
+            <a href=""><li id="wp"></li></a>
+            <a href=""><li id="fb"></li></a>
+            <a href=""><li id="ig"></li></a>
+            <a href=""><li id="lk"></li></a>
+            <a href=""><li id="yt"></li></a>
+        </ul>
+      </div>
     </header>
-    <section id="inicio">
+    <div id="principal">
+      <h1>Viaja!</h1>
+      <h2>Descubre lugares maravillosos!</h2>
+      <div id="verDestinos">
+        Ver destinos
+      </div>
+    </div>
+  </section>
+    <section name="destinos" id="destinos">
 
     </section>
-    <section id="destinos">
-
-    </section>
-    <section id="nosotros">
+    <section name="nosotros" id="nosotros">
         <div class="wrapper">
             <div>
                 <h3>Quienes somos</h3>
@@ -28,7 +53,7 @@
             </div>
         </div>
     </section>
-    <section id="mapa">
+    <section name="mapa" id="mapa">
         <div class="wrapper">
             <div class="container">
                 <div class="row">
@@ -110,5 +135,6 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/parallaxInicio.js"></script>
 </body>
 </html>
