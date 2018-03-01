@@ -67,6 +67,7 @@ header #menu{
   background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   width:100%;
 }
