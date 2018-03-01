@@ -1,3 +1,98 @@
+header #logo {
+  background-image: url("../img/iconoweb.png");
+  background-size: contain;
+  width: 20vh;
+  height: 20vh;
+  display: inline-block;
+  margin-top: -50px;
+  margin-left: 30px;
+}
+#logo p{
+  text-align: center;
+  margin-top: 120px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header #menu{
+  color:white;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: -10vh;
+}
+#menu a{
+  margin-right: 20px;
+}
+
+#redesSociales{
+  margin-top: -8vh;
+  float:right;
+}
+#redesSociales ul{
+  list-style-type: none;
+}
+#redesSociales ul li {
+  float:left;
+  margin-right: 5px;
+  background-size: contain;
+  width:50px;
+  height:50px;
+}
+#redesSociales #tw{
+  background-image: url("../img/twitter_icon.png");
+}
+#redesSociales #wp{
+  background-image: url("../img/whatsapp_icon.png");
+}
+#redesSociales #fb{
+  background-image: url("../img/facebook_icon.png");
+}
+#redesSociales #ig{
+  background-image: url("../img/instagram_icon.png");
+}
+#redesSociales #lk{
+  background-image: url("../img/linkedin_icon.png");
+}
+#redesSociales #yt{
+  background-image: url("../img/youtube_icon.png");
+}
+
+#inicio{
+  background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width:100%;
+}
+#principal {
+  margin-top: 10vh;
+  font-family: sans-serif;
+  float:left;
+  color:white;
+  margin-left: 30%;
+}
+#principal h1,h2 {
+  display: block;
+}
+#principal h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+#principal h2 {
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-size: 50px;
+  margin-top: -50px;
+}
+#verDestinos{
+}
+
+#destinos{
+  height:1000px;
+}
 
 #nosotros .wrapper{
     background-image: url("../img/elefantes.jpg");
@@ -29,7 +124,7 @@
     text-shadow: 1px 1px #537775;
 }
 
-#descubrir {
+#descubrir{
     background-color: #ff6600;
     font-weight: bold;
     width: 110px;
@@ -41,8 +136,21 @@
     bottom: 5px !important;
     margin-top: 50px;
 }
+#verDestinos{
+  width: 200px;
+  text-align: center;
+  background-color: #ff6600;
+  font-weight: bold;
+  font-size: 30px;
+  font-weight: lighter;
+  font-style: italic;
+  border-radius: 3px 0px;
+  margin-top: 10vh;
+  margin-left: 30vh;
+  padding: 20px;
 
-#descubrir:hover {
+}
+#descubrir:hover, #verDestinos:hover {
     cursor:pointer;
     background-color: antiquewhite;
 }
