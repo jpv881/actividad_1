@@ -4,15 +4,13 @@ body {
 header #logo {
   background-image: url("../img/iconoweb.png");
   background-size: contain;
-  width: 20vh;
-  height: 20vh;
+  background-repeat: no-repeat;
   display: inline-block;
-  margin-top: -50px;
   margin-left: 30px;
 }
 #logo p{
   text-align: center;
-  margin-top: 120px;
+  margin-top: 70px;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 20px;
@@ -25,14 +23,16 @@ header #menu{
   font-style: italic;
   text-align: center;
   margin-top: -10vh;
+
 }
 #menu a{
   margin-right: 20px;
+    color:inherit;
 }
-
 #redesSociales{
   margin-top: -8vh;
   float:right;
+  margin-right:10px;
 }
 #redesSociales ul{
   list-style-type: none;
@@ -43,6 +43,12 @@ header #menu{
   background-size: contain;
   width:50px;
   height:50px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+#redesSociales ul li:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 #redesSociales #tw{
   background-image: url("../img/twitter_icon.png");
@@ -62,12 +68,9 @@ header #menu{
 #redesSociales #yt{
   background-image: url("../img/youtube_icon.png");
 }
-
 #inicio{
   background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
   width:100%;
 }
@@ -118,7 +121,7 @@ header #menu{
 }
 
 #nosotros .wrapper > div h3,
-#nosotros . wrapper > div p{
+#nosotros .wrapper > div p{
     color: white;
 }
 
