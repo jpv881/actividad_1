@@ -33,7 +33,7 @@ body{
 }
 
 header #logo {
-  background-image: url("../img/iconoweb.png");
+  background-image: url("../img/66.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -100,7 +100,7 @@ header #menu{
   background-image: url("../img/youtube_icon.png");
 }
 #inicio{
-  background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
+  background-image: url("../img/newYork.jpg");
   background-size: cover;
   height: 100vh;
   width:100%;
@@ -130,15 +130,15 @@ header #menu{
   height:1000px;
 }
 
-#nosotros .wrapper{
-    background-image: url("../img/elefantes.jpg");
-    /*width: 100vw;*/
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    font-family: 'Lato', sans-serif;
-}
+/*#nosotros .wrapper{*/
+    /*background-image: url("../img/elefantes.jpg");*/
+    /*!*width: 100vw;*!*/
+    /*height: 100vh;*/
+    /*background-size: cover;*/
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*font-family: 'Lato', sans-serif;*/
+/*}*/
 
 #nosotros .wrapper > div {
     //width: 35vw;
@@ -150,6 +150,16 @@ header #menu{
     border-radius: 5px;
     padding: 10px 25px;
     color: white;
+}
+
+#nosotros {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#nosotros video {
+    width: 100%;
+    height: 100%;
 }
 
 #nosotros .wrapper > div h3,
