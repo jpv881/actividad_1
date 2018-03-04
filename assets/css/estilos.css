@@ -1,7 +1,37 @@
-body {
-    margin:0;
-    padding:0;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@media (min-width: 400px) {
+    #divQuienes {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
+
+@media (min-width: 768px) {
+    #divQuienes {
+        width: 50%;
+        left: 30px;
+        transform: none;
+    }
+}
+
+@media (min-width: 992px) {
+    #divQuienes {
+        width: 35%;
+        left: 30px;
+        transform: none;
+    }
+}
+
+body{
+    background-image: url("../img/world-map.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 header #logo {
   background-image: url("../img/iconoweb.png");
   background-size: contain;
@@ -146,14 +176,15 @@ header #menu{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
 }
 
 #nosotros .wrapper > div {
-    width: 35vw;
+    //width: 35vw;
     background-color: rgba(255, 255, 255,0.5);
     position: relative;
     top: 30px;
-    left: 30px;
+    //left: 30px;
     text-align: center;
     border-radius: 5px;
     padding: 10px 25px;
@@ -202,30 +233,34 @@ header #menu{
 #mapa {
     background-color: black;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
+}
+#mapa div {
+    padding: 0 10%;
 }
 
-#mapa > .row .col-md-6:nth-child(1){
-    display: flex;
-    justify-content: center;
-}
-
-#formulario input{
+form input{
     margin-bottom: 10px !important;
 }
 
 footer {
-    background-color: #FC8E32;
+    background-color: black;
     padding-top: 10px;
+    color: white;
+    font-family: 'Lato', sans-serif;
 }
 
-footer a{
-    color: #646464;
-    /*font-weight: bold;*/
+a {
+    text-decoration: none !important;
+}
+
+footer a, footer p{
+    color: white;
 }
 
 footer a:hover{
-    color: white;
+    color: #676767;
+
 }
 
 footer .col-md-4 {
@@ -238,19 +273,118 @@ footer .col-md-4 {
     margin-bottom: 0px;
 }
 
+footer p {
+    font-weight: normal;
+}
+
 #textoAyuda {
     color: #646464;
+    font-weight: bold;
 }
 
 #divDatos p{
-    color: #CA4D0F;
+    font-family: 'Lato', sans-serif;
 }
 
 #copyRight {
     text-align: center;
-    border-top: solid 1px #646464;
-    color: #646464;
+    border-top: solid 1px white;
+    color: white;
     padding: 15px 0px;
     font-size: 0.8em;
     margin-top: 10px;
+}
+
+form button {
+    margin-top: 15px;
+    //font-weight: 500;
+    float: right;
+}
+
+footer input {
+    background-color: black;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: solid 1.5px white;
+    color: white;
+    padding: 0px 5px;
+}
+
+#contacto input {
+    /*border-top: transparent;*/
+    /*border-right: transparent;*/
+    /*border-left: transparent;*/
+    /*border-bottom: solid 1.5px #ced4da;*/
+    border: transparent;
+    padding: 0px 5px;
+    width: 100%;
+    //background-color: transparent;
+}
+
+#contacto textarea {
+    /*border-bottom: solid 1.5px #ced4da !important;*/
+    /*background-color: transparent;*/
+    border: transparent;
+}
+
+#contacto textarea,
+#contacto input {
+    background-color: rgba(255,255,255,0.8);
+    font-weight: bold;
+}
+
+footer input::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+footer button {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+footer button:hover,
+#divDatos button:hover{
+    color: #565656 !important;
+}
+
+#contacto {
+    //padding: 40px 0;
+}
+
+#divDatos,
+#divForm {
+    //background-color: rgba(255,255,255,0.8);
+    padding: 15px;
+    border-radius: 5px;
+    //margin-top: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+*:focus{
+    outline: none !important;
+}
+
+#contacto button {
+    border: solid 2px white;
+    color:#747474;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.8);
+}
+
+#contacto button:hover {
+    background-color:black;
+    color: white;
+}
+
+#divDatos div {
+    background-color: rgba(255,255,255,0.8);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#contacto input {
+    border-radius: 5px;
 }
