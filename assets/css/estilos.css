@@ -13,8 +13,14 @@
         width: 50%;
         left: 30px;
         transform: none;
-    }
 }
+body {
+    max-width:100%;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+}
+
 
 @media (min-width: 992px) {
     #divQuienes {
@@ -37,7 +43,6 @@ header #logo {
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
-  margin-left: 30px;
 }
 #logo p{
   text-align: center;
@@ -46,33 +51,26 @@ header #logo {
   font-weight: bold;
   font-size: 20px;
 }
-
-header #menu{
-  color:white;
-  font-size: 30px;
-  font-family: sans-serif;
-  font-style: italic;
-  text-align: center;
-  margin-top: -10vh;
+#anchors {
+    list-style-type: none;
 }
-#menu a{
-     margin-right: 20px;
-     color:inherit;
- }
-#menu a:hover{
-    text-decoration: none;
-  }
+#anchors li{
+    float:left;
+}
+#anchors li a{
+    color:white;
+    font-size:30px;
+    margin-right:20px;
+}
 #redesSociales{
-  margin-top: -50px;
-  float:right;
-  margin-right:10px;
+    padding-left:33%;
 }
 #redesSociales ul{
   list-style-type: none;
 }
 #redesSociales ul li {
   float:left;
-  margin-right: 5px;
+  margin-left:10px;
   background-size: contain;
   width:50px;
   height:50px;
