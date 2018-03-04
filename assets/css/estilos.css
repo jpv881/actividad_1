@@ -15,6 +15,13 @@
         transform: none;
     }
 }
+body {
+    max-width:100%;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+}
+
 
 @media (min-width: 992px) {
     #divQuienes {
@@ -24,7 +31,7 @@
     }
 }
 
-body{
+#contacto{
     background-image: url("../img/world-map.jpg");
     background-size: cover;
     background-position: center center;
@@ -32,48 +39,47 @@ body{
     background-attachment: fixed;
 }
 
+
 header #logo {
-  background-image: url("../img/66.png");
+    background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
+}
+
+#textoLogo{
+    margin-top:-40px;
+}
+#imagenLogo{
+  margin-top:-25px;
+  height:130px;
+  background-image: url("../img/iconoweb.png");
+>>>>>>> 20e85d26c0b2df726bd111ca825d940d9741f960
   background-size: contain;
   background-repeat: no-repeat;
-  display: inline-block;
-  margin-left: 30px;
-}
-#logo p{
-  text-align: center;
-  margin-top: 70px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 20px;
 }
 
-header #menu{
-  color:white;
-  font-size: 30px;
-  font-family: sans-serif;
-  font-style: italic;
-  text-align: center;
-  margin-top: -10vh;
-
+#anchors {
+    list-style-type: none;
 }
-#menu a{
-  margin-right: 20px;
-    color:inherit;
+#anchors li{
+    float:left;
+}
+#anchors li a{
+    color:white;
+    font-size:30px;
+    margin-right:20px;
 }
 #redesSociales{
-  margin-top: -8vh;
-  float:right;
-  margin-right:10px;
+    margin-top: 10px;
+    float: right;
 }
 #redesSociales ul{
   list-style-type: none;
 }
 #redesSociales ul li {
   float:left;
-  margin-right: 5px;
+  margin-left:10px;
   background-size: contain;
-  width:50px;
-  height:50px;
+  width:30px;
+  height:30px;
   -webkit-transition: -webkit-transform .8s ease-in-out;
   transition: transform .8s ease-in-out;
 }
@@ -103,32 +109,64 @@ header #menu{
   background-image: url("../img/newYork.jpg");
   background-size: cover;
   height: 100vh;
-  width:100%;
+  font-family: "Lato";
 }
 #principal {
   margin-top: 10vh;
-  font-family: sans-serif;
-  float:left;
   color:white;
-  margin-left: 30%;
 }
-#principal h1,h2 {
-  display: block;
+#viaja{
+    margin-left:30%;
+    font-size: 100px;
 }
-#principal h1 {
-  font-weight: bold;
-  font-size: 70px;
+#descubre{
+    margin-left:30%;
+    font-size:20px;
 }
-#principal h2 {
-  font-weight: lighter;
-  font-family: sans-serif;
-  font-size: 50px;
-  margin-top: 50px;
+#destinosWrap{
+    margin-top:10%;
+    background-color:white;
+    width: fit-content;
+}
+.dest .col-md-4 div{
+    height:250px;
+    width:350px;
+    background-size: cover;
+    margin-bottom:15vh;
+    margin-right: 15vh;
+    margin-left: 15vh;
+}
+.dest h1{
+    font-family:Calibri;
+    color:white;
+    font-size: 20px;
+    background-color: #cc0000;
+    text-align:end;
+    background-size: contain;
+    display:inline-block;
+    float:right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#destino1{
+    background-image: url("../img/destinos/finland.jpg");
+}
+#destino2{
+    background-image: url("../img/destinos/marruecos.jpg");
+    }
+#destino3{
+    background-image: url("../img/destinos/nicaragua.jpg");
+}
+#destino4{
+    background-image: url("../img/destinos/peru.jpg");
+}
+#destino5{
+    background-image: url("../img/destinos/singapur.jpg");
+}
+#destino6{
+    background-image: url("../img/destinos/suiza.jpg");
 }
 
-#destinos{
-  height:1000px;
-}
 
 /*#nosotros .wrapper{*/
     /*background-image: url("../img/elefantes.jpg");*/
@@ -139,6 +177,16 @@ header #menu{
     /*background-repeat: no-repeat;*/
     /*font-family: 'Lato', sans-serif;*/
 /*}*/
+
+#nosotros .wrapper{
+    background-image: url("../img/elefantes.jpg");
+    /*width: 100vw;*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+}
 
 #nosotros .wrapper > div {
     //width: 35vw;
@@ -184,19 +232,17 @@ header #menu{
     margin-top: 50px;
 }
 #verDestinos{
-  width: 300px;
-  text-align: center;
-  background-color: #ff6600;
-  font-weight: bold;
-  font-size: 30px;
   font-weight: lighter;
-  font-style: italic;
-  border-radius: 3px 0px;
-  margin-top: 10vh;
-  margin-left: 25vh;
-  padding: 20px;
+  font-size: 30px;
+  margin-top: 20vh;
 }
-#descubrir:hover, #verDestinos:hover {
+#verDestinos a{
+    width:fit-content;
+    padding:0px 5px 0px 5px;
+        background-color: #cc0000;
+    box-shadow: 1px 2px 10px black;
+}
+#descubrir:hover, #verDestinos a:hover {
     cursor:pointer;
     background-color: antiquewhite;
 }
@@ -359,5 +405,3 @@ footer button:hover,
 #contacto input {
     border-radius: 5px;
 }
-
-
