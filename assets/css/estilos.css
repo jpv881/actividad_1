@@ -38,20 +38,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-header #logo {
+#textoLogo{
+    margin-top:-40px;
+}
+#imagenLogo{
+  margin-top:-25px;
+  height:130px;
   background-image: url("../img/iconoweb.png");
   background-size: contain;
   background-repeat: no-repeat;
-  display: inline-block;
 }
-#logo p{
-  text-align: center;
-  margin-top: 70px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-}
+
 #anchors {
     list-style-type: none;
 }
@@ -64,7 +61,8 @@ header #logo {
     margin-right:20px;
 }
 #redesSociales{
-    padding-left:33%;
+    margin-top: 10px;
+    float: right;
 }
 #redesSociales ul{
   list-style-type: none;
@@ -73,8 +71,8 @@ header #logo {
   float:left;
   margin-left:10px;
   background-size: contain;
-  width:50px;
-  height:50px;
+  width:30px;
+  height:30px;
   -webkit-transition: -webkit-transform .8s ease-in-out;
   transition: transform .8s ease-in-out;
 }
@@ -104,26 +102,19 @@ header #logo {
   background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
   background-size: cover;
   height: 100vh;
+  font-family: "Lato";
 }
 #principal {
   margin-top: 10vh;
-  font-family: sans-serif;
-  float:left;
   color:white;
-  margin-left: 30%;
 }
-#principal h1,h2 {
-  display: block;
+#viaja{
+    margin-left:30%;
+    font-size: 100px;
 }
-#principal h1 {
-  font-weight: bold;
-  font-size: 70px;
-}
-#principal h2 {
-  font-weight: lighter;
-  font-family: sans-serif;
-  font-size: 50px;
-  margin-top: 50px;
+#descubre{
+    margin-left:30%;
+    font-size:20px;
 }
 #destinosWrap{
     margin-top:10%;
@@ -212,19 +203,17 @@ header #logo {
     margin-top: 50px;
 }
 #verDestinos{
-  width: 300px;
-  text-align: center;
-  background-color: #ff6600;
-  font-weight: bold;
-  font-size: 30px;
   font-weight: lighter;
-  font-style: italic;
-  border-radius: 3px 0px;
-  margin-top: 10vh;
-  margin-left: 25vh;
-  padding: 20px;
+  font-size: 30px;
+  margin-top: 20vh;
 }
-#descubrir:hover, #verDestinos:hover {
+#verDestinos a{
+    width:fit-content;
+    padding:0px 5px 0px 5px;
+        background-color: #cc0000;
+    box-shadow: 1px 2px 10px black;
+}
+#descubrir:hover, #verDestinos a:hover {
     cursor:pointer;
     background-color: antiquewhite;
 }
