@@ -51,7 +51,6 @@ header #logo {
   margin-top:-25px;
   height:130px;
   background-image: url("../img/iconoweb.png");
->>>>>>> 20e85d26c0b2df726bd111ca825d940d9741f960
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -178,15 +177,6 @@ header #logo {
     /*font-family: 'Lato', sans-serif;*/
 /*}*/
 
-#nosotros .wrapper{
-    background-image: url("../img/elefantes.jpg");
-    /*width: 100vw;*/
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    font-family: 'Lato', sans-serif;
-}
 
 #nosotros .wrapper > div {
     //width: 35vw;
