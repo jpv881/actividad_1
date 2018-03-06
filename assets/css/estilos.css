@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
 @media (min-width: 400px) {
     #divQuienes {
@@ -178,17 +179,17 @@ header #logo {
 /*}*/
 
 
-#nosotros .wrapper > div {
-    //width: 35vw;
-    background-color: rgba(255, 255, 255,0.5);
-    position: relative;
-    top: 30px;
-    //left: 30px;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px 25px;
-    color: white;
-}
+/*#nosotros .wrapper > div {*/
+    /*//width: 35vw;*/
+    /*//background-color: rgba(255, 255, 255,0.5);*/
+    /*position: relative;*/
+    /*top: 30px;*/
+    /*//left: 30px;*/
+    /*text-align: center;*/
+    /*border-radius: 5px;*/
+    /*padding: 10px 25px;*/
+    /*color: white;*/
+/*}*/
 
 #nosotros {
     height: 100vh;
@@ -394,4 +395,34 @@ footer button:hover,
 
 #contacto input {
     border-radius: 5px;
+}
+
+#divCita {
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-family: 'Special Elite', sans-serif;
+}
+
+#divCita div:nth-child(1){
+    font-size: 1.8em;
+}
+
+#divCita div:nth-child(2){
+    font-size: 1.2em;
+}
+
+#nosotros .wrapper {
+    position: relative;
+}
+
+#btnToTop div:nth-child(1){
+    border: solid 2px white;
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
 }
