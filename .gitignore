@@ -1,2 +1,5 @@
 /idea
 /bower_components
+/assets/estilos.min.css
+/assets/main.min.js
+/node_modules

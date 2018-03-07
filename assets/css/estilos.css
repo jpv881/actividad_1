@@ -23,7 +23,6 @@ body {
     padding:0;
 }
 
-
 @media (min-width: 992px) {
     #divQuienes {
         width: 35%;
@@ -31,7 +30,23 @@ body {
         transform: none;
     }
 }
-
+.navbar-nav{
+    color:white;
+    flex-direction: row;
+    list-style-type:none;
+}
+#navbarList {
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+#navbarList ul{
+    display:inline-block;
+}
+#navbarList a{
+    color:white;
+    width:200px;
+}
 #contacto{
     background-image: url("../img/world-map.jpg");
     background-size: cover;
@@ -39,23 +54,16 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-
-header #logo {
-    background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
-}
-
-#textoLogo{
-    margin-left: 60px;
-    color: white;
+#fullLogo li{
+    width:70px;
 }
 #imagenLogo{
-  height:80px;
-  background-image: url("../img/66.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+    height:50px;
+    background-image: url("../img/66.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
 }
-
 #anchors {
     list-style-type: none;
 }
@@ -67,26 +75,21 @@ header #logo {
     font-size:30px;
     margin-right:20px;
 }
-#redesSociales{
-    margin-top: 10px;
-    float: right;
+#redesSociales li {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    margin-right: 5px;
 }
-#redesSociales ul{
-  list-style-type: none;
-}
-#redesSociales ul li {
-  float:left;
-  margin-left:10px;
-  background-size: contain;
-  width:30px;
-  height:30px;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out;
-}
-#redesSociales ul li:hover {
+#redesSociales li:hover {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
+#redesSociales div{
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:40px;
+  width:40px;
+  }
 #redesSociales #tw{
   background-image: url("../img/twitter_icon.png");
 }
@@ -109,51 +112,43 @@ header #logo {
   background-image: url("../img/newYork.jpg");
   background-size: cover;
   height: 100vh;
-  font-family: "Lato";
+  font-family: 'Lato';
 }
 #principal {
   margin-top: 10vh;
   color:white;
 }
 #viaja{
-    margin-left:30%;
-    font-size: 100px;
+    font-size: 130px;
+    text-shadow: 2px 2px 0px black;
+    margin-left:70px;
 }
-#descubre{
-    margin-left:30%;
-    font-size:20px;
+#descubre {
+    font-size: 25px;
+    text-shadow: 2px 2px 0px black;
 }
-#destinosWrap{
-    margin-top:10%;
-    background-color:white;
-    width: fit-content;
+.destinoCointainer div{
+    margin:5vh 0vh 5vh 0vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width:500px;
+    height:300px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4 );
 }
-.dest .col-md-4 div{
-    height:250px;
-    width:350px;
-    background-size: cover;
-    margin-bottom:15vh;
-    margin-right: 15vh;
-    margin-left: 15vh;
-}
-.dest h1{
-    font-family:Calibri;
+.destinoCointainer p{
     color:white;
-    font-size: 20px;
-    background-color: #cc0000;
-    text-align:end;
-    background-size: contain;
-    display:inline-block;
-    float:right;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-family: 'Lato';
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 1px 1px 0px black;
+    background: rgba(0,123,255,0.6);
 }
 #destino1{
     background-image: url("../img/destinos/finland.jpg");
 }
 #destino2{
     background-image: url("../img/destinos/marruecos.jpg");
-    }
+}
 #destino3{
     background-image: url("../img/destinos/nicaragua.jpg");
 }
@@ -221,17 +216,6 @@ header #logo {
     position: relative;
     bottom: 5px !important;
     margin-top: 50px;
-}
-#verDestinos{
-  font-weight: lighter;
-  font-size: 30px;
-  margin-top: 20vh;
-}
-#verDestinos a{
-    width:fit-content;
-    padding:0px 5px 0px 5px;
-    background-color: #cc0000;
-    box-shadow: 1px 2px 10px black;
 }
 #descubrir:hover, #verDestinos a:hover {
     cursor:pointer;
