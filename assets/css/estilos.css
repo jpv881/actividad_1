@@ -417,12 +417,28 @@ footer button:hover,
     position: relative;
 }
 
-#btnToTop div:nth-child(1){
-    border: solid 2px white;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    position: absolute;
+#btnToTop {
+    position: fixed;
     bottom: 50px;
-    right: 50px;
+    right: 15px;
+    z-index: 1;
+}
+
+#btnToTop div:nth-child(1){
+    border: solid 3px crimson;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+    font-size: 3em;
+    visibility: hidden;
+}
+
+#btnToTop div:nth-child(1):hover{
+    cursor:pointer;
+    font-size: 4em;
+    border: solid 5px;
 }
